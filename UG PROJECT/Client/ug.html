@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dam Failure</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.5.min.js"></script>
+    <script src="ug.js"></script>
+
+    <link rel="stylesheet" href="ug.css">
+</head>
+
+<body>
+    <div class="img"></div>
+    <form action="form" class="form">
+        <div>
+            <h2>Country</h2>
+            <select class="country" id="uicountry">
+                <option disabled="disabled" selected=" selected">
+                    choose any country</option>
+                <option value="">USA</option>
+                <option value="">India</option>
+            </select>
+            <h2>Height(m)</h2>
+            <input class="ok" type="text" id="uih" name="height" placeholder="Height">
+            <h2>Construction<br><span class="sub-heading">Year</span>
+            </h2>
+            <input class="ok" type="text" id="uiyear" name="year" placeholder="Year">
+        </div>
+
+        <button class="submit button-37" onclick="onClickedEstimatePrice()" type="button">Show Details</button>
+
+        <div class="result">
+            <div class="estimate">
+                Estimated Failure Year:<div class="num" id="uiFailure"></div>
+            </div>
+
+            <div class="estimate">
+                Estimated Age of Dam:<div  class="num" id="uiAge"></div>
+            </div>
+
+        </div>
+
+    </form>
+</body>
+
+</html>
